@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root{
+  --bg-color : white ;
+  --font-color : black ;
+  --shadow-color : 7.8px 15.7px 15.7px hsl(0deg 0% 0% / 0.26) ;
+}
+
+body.dark{
+  --bg-color : rgb(22,26,29) ;
+  --font-color : rgb(222,228,234) ;
+  --shadow-color : 0 0  15.7px hsl(0, 0%, 0%) ;
+
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: 'Poppins';
+}
+
+.header{
+  border: 1px solid rgba(0, 0, 0, 0.938);
+  background-color: rgba(255, 255, 255, 0.856);
+}
+
+
+body.dark .header{
+  background-color: #282E33;
+  border :1px solid rgba(231, 231, 231, 0.199) ;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 1450px;
+  padding-left:1rem ;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing{
+  background-image: url('./assets/header_img.png');
+  height : 100vh; 
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
